@@ -61,6 +61,11 @@ public class Turret : MonoBehaviour
     void ShootTarget(Transform target)
     {
         transform.LookAt(target);
+
+        //lerp way
+        //need rot speed
+        //Vector3 toTarget = target.position - transform.position;
+        //transform.Rotate()
     }
 
     void Levitate()
