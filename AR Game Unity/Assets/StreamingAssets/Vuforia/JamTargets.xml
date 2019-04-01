@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="Destiny2" size="1.000000 1.000000" />
+    <ImageTarget name="Kabuterimon" size="1.000000 1.000000" />
+    <ImageTarget name="PekkaKana" size="1.000000 0.600000" />
+    <ImageTarget name="DuskNoir" size="1.000000 1.173913" />
+    <ImageTarget name="Togedemaru" size="1.000000 0.750000" />
+    <ImageTarget name="Pokemon" size="1.000000 1.123595" />
+    <ImageTarget name="GreyRocks" size="1.000000 0.665455" />
+    <ImageTarget name="BeachStones" size="1.000000 0.750000" />
+  </Tracking>
+</QCARConfig>
