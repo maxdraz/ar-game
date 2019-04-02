@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -30,12 +31,25 @@ public class GameManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI objectsLeft;
     [SerializeField] private GameObject intro;
     [SerializeField] private GameObject outro;
+    private enum gameState { start, game, end };
+    gameState currentGameState = gameState.start;
 
     private void Update()
     {
-        if (Input.touchCount > 0)
+        if (currentGameState == gameState.start)
         {
-            Destroy(intro, 0.05f);
+            if (Input.touchCount > 0)
+            {
+                Destroy(intro, 0.05f);
+                currentGameState = gameState.game;
+            }
+        }
+        else if (currentGameState == gameState.end)
+        {
+            if (Input.touchCount > 0)
+            {
+                SceneManager.LoadScene(0);
+            }
         }
     }
     
@@ -57,6 +71,7 @@ public class GameManager : MonoBehaviour
         if (ObjectsToChange == 0)
         {
             outro.SetActive(true);
+            currentGameState = gameState.end;
         }
     }
 

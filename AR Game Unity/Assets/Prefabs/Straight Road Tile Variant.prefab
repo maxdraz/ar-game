@@ -9,19 +9,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: 1a3f02f8bf28f794b991d0dc32cc8d90, type: 3}
       propertyPath: m_Name
-      value: Straight Road Tile
+      value: Straight Road Tile Variant
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1a3f02f8bf28f794b991d0dc32cc8d90, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.3
+      value: 0.078664295
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1a3f02f8bf28f794b991d0dc32cc8d90, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.3
+      value: 0.0265
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1a3f02f8bf28f794b991d0dc32cc8d90, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 38.7
+      value: -0.0221
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1a3f02f8bf28f794b991d0dc32cc8d90, type: 3}
       propertyPath: m_LocalRotation.x
@@ -57,15 +57,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1a3f02f8bf28f794b991d0dc32cc8d90, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.40859446
+      value: 0.003
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1a3f02f8bf28f794b991d0dc32cc8d90, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.40859446
+      value: 0.003498958
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1a3f02f8bf28f794b991d0dc32cc8d90, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.40859446
+      value: 0.003498958
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 1a3f02f8bf28f794b991d0dc32cc8d90, type: 3}
       propertyPath: m_Materials.Array.data[0]
