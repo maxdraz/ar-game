@@ -29,10 +29,15 @@ public class GameManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI objectsLeft;
     [SerializeField] private GameObject intro;
 
-    private void OnMouseDown()
+    private void Update()
     {
-        Destroy(intro, 0.05f);
+        if (Input.GetMouseButtonDown(0))
+        {
+            Destroy(intro, 0.05f);
+        }
     }
+    
+    
 
     public void AddToObjectToChange()
     {
