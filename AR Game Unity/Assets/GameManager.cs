@@ -7,6 +7,24 @@ using TMPro;
 public class GameManager : MonoBehaviour
 {
     public static GameManager the = null;
+
+    void Awake()
+    {
+        //Check if instance already exists
+        if (the == null)
+        { 
+            //if not, set instance to this
+            the = this;
+        }
+        //If instance already exists and it's not this:
+        else if (the != this)
+        { 
+            //Then destroy this. This enforces our singleton pattern, meaning there can only ever be one instance of a GameManager.
+            Destroy(gameObject);
+        }
+
+    }
+
     private int ObjectsToChange;
     [SerializeField] private TextMeshProUGUI objectsLeft;
     [SerializeField] private GameObject intro;
