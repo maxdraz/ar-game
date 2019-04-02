@@ -6,7 +6,8 @@ public class Trash : Interactable
 {
     public override void Interaction()
     {
-        base.Interaction();
+        myObj.SetActive(false);
+        
     }
 
     private void OnMouseDown()
