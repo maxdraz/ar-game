@@ -8,9 +8,9 @@ public class Turret : MonoBehaviour
     public List<Turret> targets;
     public Transform target;
 
-    [SerializeField] private float speed;
-    [SerializeField] private float magnitude;
-    [SerializeField] private float theta;
+    [SerializeField] private float speed = 0.5f;
+    [SerializeField] private float magnitude = 0.4f;
+    
 
 
     private void Start()
@@ -25,16 +25,23 @@ public class Turret : MonoBehaviour
                 }
                 else
                 {
-                    break;
+                    continue;
                 }
             }
         }
+
+        //foreach(Turret target in targets)
+        //{
+        //    if(target == transform)
+        //    {
+        //        targets.Remove(target);
+        //    }
+        //}
     }
 
     // Update is called once per frame
     void Update()
-    {
-        theta += Time.deltaTime;
+    {   
 
         if(target != null)
         {
@@ -45,7 +52,7 @@ public class Turret : MonoBehaviour
             ChooseTarget();
         }
         //sinewave        
-        //Levitate();
+        Levitate();
      
         
     }
@@ -60,20 +67,23 @@ public class Turret : MonoBehaviour
 
     void ShootTarget(Transform target)
     {
-        transform.LookAt(target);
+        //transform.LookAt(target);
 
         //lerp way
         //need rot speed
-        //Vector3 toTarget = target.position - transform.position;
+        Vector3 toTarget = target.position - transform.position;
         //transform.Rotate()
+        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(toTarget), Time.deltaTime);
     }
 
     void Levitate()
     {
+        //make it happen no matter y 
+        // make it relative to parent's up
         Vector3 pos = transform.position;
         float newY = Mathf.Sin(Time.time * speed);
         
-        transform.position = new Vector3(pos.x, newY, pos.z) * magnitude;
+        transform.localPosition = new Vector3(0, newY, 0) * magnitude;
        
               
     }
