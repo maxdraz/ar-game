@@ -26,12 +26,14 @@ public class GameManager : MonoBehaviour
     }
 
     private int ObjectsToChange;
+    private int maxObjects;
     [SerializeField] private TextMeshProUGUI objectsLeft;
     [SerializeField] private GameObject intro;
+    [SerializeField] private GameObject outro;
 
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.touchCount > 0)
         {
             Destroy(intro, 0.05f);
         }
@@ -42,13 +44,20 @@ public class GameManager : MonoBehaviour
     public void AddToObjectToChange()
     {
         ObjectsToChange++;
-        objectsLeft.text = ObjectsToChange.ToString();
+        maxObjects = ObjectsToChange;
+        objectsLeft.text = ObjectsToChange.ToString() + "/" + maxObjects.ToString();
+        
     }
 
     public void SubtractToObjectToChange()
     {
         ObjectsToChange--;
-        objectsLeft.text = ObjectsToChange.ToString();
+        objectsLeft.text = ObjectsToChange.ToString() + "/" + maxObjects.ToString();
+
+        if (ObjectsToChange == 0)
+        {
+            outro.SetActive(true);
+        }
     }
 
 
