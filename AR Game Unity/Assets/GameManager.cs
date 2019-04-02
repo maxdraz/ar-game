@@ -6,8 +6,15 @@ using TMPro;
 
 public class GameManager : MonoBehaviour
 {
+    public static GameManager the = null;
     private int ObjectsToChange;
     [SerializeField] private TextMeshProUGUI objectsLeft;
+    [SerializeField] private GameObject intro;
+
+    private void OnMouseDown()
+    {
+        Destroy(intro, 0.05f);
+    }
 
     public void AddToObjectToChange()
     {
