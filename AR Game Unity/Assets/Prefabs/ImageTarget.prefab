@@ -8311,6 +8311,7 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4915751561521818689}
     m_Modifications:
+<<<<<<< HEAD
     - target: {fileID: 5364677213610065704, guid: 0a3fd3844155a9a4d9b0fadcf79f16cd,
         type: 3}
       propertyPath: m_Name
@@ -8411,6 +8412,8 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4915751562642902636}
     m_Modifications:
+=======
+>>>>>>> 9ffcf9b2ca5eb374a0f005c4ae9b2c8ee34e4501
     - target: {fileID: 5398786338936442930, guid: 91bbbf62b1283da4eab96c9ef831b7fe,
         type: 3}
       propertyPath: m_LocalPosition.x
