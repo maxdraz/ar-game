@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7486051401063539306
+--- !u!1 &1415189297060114076
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,35 +8,35 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5419128291369312354}
+  - component: {fileID: 4572441445458291860}
   m_Layer: 0
-  m_Name: RoadStraight
+  m_Name: RoadStraight x 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5419128291369312354
+--- !u!4 &4572441445458291860
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7486051401063539306}
+  m_GameObject: {fileID: 1415189297060114076}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 0.5, y: 0, z: 8.5}
   m_LocalScale: {x: 0.05, y: 0.05000003, z: 0.020000007}
   m_Children:
-  - {fileID: 7517127575512845016}
+  - {fileID: 2022745767960790574}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &7517127575512715352
+--- !u!1001 &2022745767960927406
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 5419128291369312354}
+    m_TransformParent: {fileID: 4572441445458291860}
     m_Modifications:
     - target: {fileID: 100000, guid: 1a3f02f8bf28f794b991d0dc32cc8d90, type: 3}
       propertyPath: m_Name
@@ -104,9 +104,9 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 3b9b80107ddee4947b5d1cdb73dd7753, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a3f02f8bf28f794b991d0dc32cc8d90, type: 3}
---- !u!4 &7517127575512845016 stripped
+--- !u!4 &2022745767960790574 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 1a3f02f8bf28f794b991d0dc32cc8d90,
     type: 3}
-  m_PrefabInstance: {fileID: 7517127575512715352}
+  m_PrefabInstance: {fileID: 2022745767960927406}
   m_PrefabAsset: {fileID: 0}
