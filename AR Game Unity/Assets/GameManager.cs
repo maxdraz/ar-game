@@ -34,6 +34,8 @@ public class GameManager : MonoBehaviour
     private enum gameState { start, game, end };
     gameState currentGameState = gameState.start;
 
+
+
     private void Update()
     {
         if (currentGameState == gameState.start)
@@ -75,5 +77,5 @@ public class GameManager : MonoBehaviour
         }
     }
 
-
+   
 }

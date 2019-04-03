@@ -8,6 +8,8 @@ Confidential and Proprietary - Protected under copyright and other laws.
 
 using UnityEngine;
 using Vuforia;
+using System.Collections;
+using System.Collections.Generic;
 
 /// <summary>
 /// A custom handler that implements the ITrackableEventHandler interface.
@@ -86,6 +88,7 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         var rendererComponents = GetComponentsInChildren<Renderer>(true);
         var colliderComponents = GetComponentsInChildren<Collider>(true);
         var canvasComponents = GetComponentsInChildren<Canvas>(true);
+        var audioSourceComponents = GetComponentsInChildren<AudioSource>(true);
 
         // Enable rendering:
         foreach (var component in rendererComponents)
@@ -98,6 +101,9 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         // Enable canvas':
         foreach (var component in canvasComponents)
             component.enabled = true;
+        //enable audiosources
+        foreach (var component in audioSourceComponents)
+            component.enabled = true;
     }
 
 
@@ -106,6 +112,7 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         var rendererComponents = GetComponentsInChildren<Renderer>(true);
         var colliderComponents = GetComponentsInChildren<Collider>(true);
         var canvasComponents = GetComponentsInChildren<Canvas>(true);
+        var audioSourceComponents = GetComponentsInChildren<AudioSource>(true);
 
         // Disable rendering:
         foreach (var component in rendererComponents)
@@ -118,6 +125,11 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         // Disable canvas':
         foreach (var component in canvasComponents)
             component.enabled = false;
+
+        //disable audiosources
+        foreach (var component in audioSourceComponents)            
+            component.enabled = false;
+
     }
 
     #endregion // PROTECTED_METHODS

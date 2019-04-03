@@ -291,25 +291,13 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &800231533 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6055920769398241170, guid: 073637cacbcfd904091c6afbbea36061,
-    type: 3}
-  m_PrefabInstance: {fileID: 6055920769769792617}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -113659843, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!43 &897690145
+--- !u!43 &471393379
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: ImageTargetMesh-30818
+  m_Name: ImageTargetMesh-1068
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -463,7 +451,7 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!21 &1225589929
+--- !u!21 &731402205
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
@@ -472,7 +460,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: 'Destiny2Material
 
-    -31110'
+    -1078'
   m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
@@ -491,6 +479,18 @@ Material:
     m_Floats: []
     m_Colors:
     - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
+--- !u!114 &800231533 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6055920769398241170, guid: 073637cacbcfd904091c6afbbea36061,
+    type: 3}
+  m_PrefabInstance: {fileID: 6055920769769792617}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -113659843, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1270401639
 GameObject:
   m_ObjectHideFlags: 0
@@ -628,12 +628,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1225589929}
+      objectReference: {fileID: 731402205}
     - target: {fileID: 301159083912881912, guid: 290776e01f2f9be4b85482b2d0a5348c,
         type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 897690145}
+      objectReference: {fileID: 471393379}
     - target: {fileID: 1630982924566073074, guid: 290776e01f2f9be4b85482b2d0a5348c,
         type: 3}
       propertyPath: slider
@@ -903,5 +903,10 @@ PrefabInstance:
       propertyPath: objectsLeft
       value: 
       objectReference: {fileID: 6055920769769792618}
+    - target: {fileID: 3208301242859533205, guid: 0d7c13ecf39d1c341ac05323b98f10b9,
+        type: 3}
+      propertyPath: m_Volume
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d7c13ecf39d1c341ac05323b98f10b9, type: 3}
