@@ -479,6 +479,18 @@ Material:
     m_Floats: []
     m_Colors:
     - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
+--- !u!114 &800231533 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6055920769398241170, guid: 073637cacbcfd904091c6afbbea36061,
+    type: 3}
+  m_PrefabInstance: {fileID: 6055920769769792617}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -113659843, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1270401639
 GameObject:
   m_ObjectHideFlags: 0
@@ -622,6 +634,11 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 583917649}
+    - target: {fileID: 1630982924566073074, guid: 290776e01f2f9be4b85482b2d0a5348c,
+        type: 3}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 800231533}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 290776e01f2f9be4b85482b2d0a5348c, type: 3}
 --- !u!1001 &6055920769769792617
