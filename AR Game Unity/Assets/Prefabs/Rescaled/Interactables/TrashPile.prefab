@@ -179,7 +179,7 @@ BoxCollider:
   m_GameObject: {fileID: 3853313975924931181}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -193,6 +193,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4092899200254532117}
   - component: {fileID: 4241302327813449267}
+  - component: {fileID: 2057254062163002576}
   m_Layer: 0
   m_Name: Trash Box
   m_TagString: Untagged
@@ -234,6 +235,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turnInto: {fileID: 3043779890998095134}
+  points: 6
+  pointsTextPrefab: {fileID: 4217297443490177353, guid: 1353f794000db9a4095793d38ba62bd7,
+    type: 3}
+--- !u!65 &2057254062163002576
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6321710233868427073}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.07, y: 0.37, z: 0.55}
+  m_Center: {x: 0.16, y: 0.05, z: 0.03}
 --- !u!1 &6676282894459323535
 GameObject:
   m_ObjectHideFlags: 0
@@ -286,7 +303,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4875351100456820194}
   m_Layer: 0
-  m_Name: Trash Pile
+  m_Name: TrashPile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1022,6 +1039,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.02000001
       objectReference: {fileID: 0}
+    - target: {fileID: 6337148792683172692, guid: e3e946929221f154e8996fe0daca455c,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3e946929221f154e8996fe0daca455c, type: 3}
 --- !u!4 &1067896671675829540 stripped
@@ -1112,6 +1134,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.02000003
       objectReference: {fileID: 0}
+    - target: {fileID: 6337148792683172692, guid: e3e946929221f154e8996fe0daca455c,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3e946929221f154e8996fe0daca455c, type: 3}
 --- !u!4 &1048433020435775479 stripped
@@ -1201,6 +1228,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.020000014
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337148792683172692, guid: e3e946929221f154e8996fe0daca455c,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3e946929221f154e8996fe0daca455c, type: 3}
@@ -1608,6 +1640,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.020000014
       objectReference: {fileID: 0}
+    - target: {fileID: 6337148792683172692, guid: e3e946929221f154e8996fe0daca455c,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3e946929221f154e8996fe0daca455c, type: 3}
 --- !u!4 &4775760897203385727 stripped
@@ -1698,6 +1735,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.020000014
       objectReference: {fileID: 0}
+    - target: {fileID: 6337148792683172692, guid: e3e946929221f154e8996fe0daca455c,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3e946929221f154e8996fe0daca455c, type: 3}
 --- !u!4 &6657084060706648436 stripped
@@ -1787,6 +1829,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.02000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337148792683172692, guid: e3e946929221f154e8996fe0daca455c,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3e946929221f154e8996fe0daca455c, type: 3}
