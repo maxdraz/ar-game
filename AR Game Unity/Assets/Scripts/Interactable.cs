@@ -9,7 +9,7 @@ public abstract class Interactable : MonoBehaviour
     private void Start()
     {
         myObj = gameObject;
-        GameManager.the.AddToObjectToChange();
+        GameManager.the.AddToObjectToChange(1);
     }
 
     public virtual void Interaction()

@@ -7,7 +7,7 @@ public class Trash : Interactable
     public override void Interaction()
     {
         myObj.SetActive(false);
-        GameManager.the.SubtractToObjectToChange();
+        GameManager.the.SubtractToObjectToChange(1);
         
     }
 

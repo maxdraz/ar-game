@@ -43,8 +43,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.51, y: 2.06, z: 1.79}
-  m_Center: {x: 2.74, y: 0, z: -0.87}
+  m_Size: {x: 4.276116, y: 2.06, z: 6.227771}
+  m_Center: {x: 2.4136019, y: 0, z: -0.87046057}
 --- !u!114 &5247227563877287402
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58,6 +58,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turnInto: {fileID: 541349186113995753}
+  points: 3
+  pointsTextPrefab: {fileID: 4217297443490177353, guid: 1353f794000db9a4095793d38ba62bd7,
+    type: 3}
 --- !u!1001 &6624632763059936889
 PrefabInstance:
   m_ObjectHideFlags: 0

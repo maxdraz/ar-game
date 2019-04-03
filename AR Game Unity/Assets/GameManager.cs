@@ -55,20 +55,20 @@ public class GameManager : MonoBehaviour
     
     
 
-    public void AddToObjectToChange()
+    public void AddToObjectToChange(int points)
     {
-        ObjectsToChange++;
+        ObjectsToChange+=points;
         maxObjects = ObjectsToChange;
         objectsLeft.text = ObjectsToChange.ToString() + "/" + maxObjects.ToString();
         
     }
 
-    public void SubtractToObjectToChange()
+    public void SubtractToObjectToChange(int points)
     {
-        ObjectsToChange--;
+        ObjectsToChange-= points;
         objectsLeft.text = ObjectsToChange.ToString() + "/" + maxObjects.ToString();
 
-        if (ObjectsToChange == 0)
+        if (ObjectsToChange <= 0)
         {
             outro.SetActive(true);
             currentGameState = gameState.end;
