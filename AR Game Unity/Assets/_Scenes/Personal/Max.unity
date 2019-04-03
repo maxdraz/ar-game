@@ -639,6 +639,21 @@ PrefabInstance:
       propertyPath: slider
       value: 
       objectReference: {fileID: 800231533}
+    - target: {fileID: 301159083912881916, guid: 290776e01f2f9be4b85482b2d0a5348c,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 301159083912881915, guid: 290776e01f2f9be4b85482b2d0a5348c,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 301159083912881914, guid: 290776e01f2f9be4b85482b2d0a5348c,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 290776e01f2f9be4b85482b2d0a5348c, type: 3}
 --- !u!1001 &6055920769769792617
