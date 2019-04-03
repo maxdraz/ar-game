@@ -450,6 +450,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 100000, guid: 54f3f9b6ec13e63438ce442d8ddd7c15, type: 3}
+      propertyPath: m_Name
+      value: Building1
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 54f3f9b6ec13e63438ce442d8ddd7c15, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.164
@@ -493,10 +497,6 @@ PrefabInstance:
     - target: {fileID: 400000, guid: 54f3f9b6ec13e63438ce442d8ddd7c15, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 54f3f9b6ec13e63438ce442d8ddd7c15, type: 3}
-      propertyPath: m_Name
-      value: Building1
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 54f3f9b6ec13e63438ce442d8ddd7c15, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -728,6 +728,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 100000, guid: 9bc3889ff00ea1e43b2f131a72a7a092, type: 3}
+      propertyPath: m_Name
+      value: Building2
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9bc3889ff00ea1e43b2f131a72a7a092, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.59
@@ -771,10 +775,6 @@ PrefabInstance:
     - target: {fileID: 400000, guid: 9bc3889ff00ea1e43b2f131a72a7a092, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 9bc3889ff00ea1e43b2f131a72a7a092, type: 3}
-      propertyPath: m_Name
-      value: Building2
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 9bc3889ff00ea1e43b2f131a72a7a092, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -846,6 +846,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1f65492923f8ec1468d3eadfb7df7244, type: 3}
+      propertyPath: m_Name
+      value: Car
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1f65492923f8ec1468d3eadfb7df7244, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.069
@@ -901,10 +905,6 @@ PrefabInstance:
     - target: {fileID: 400000, guid: 1f65492923f8ec1468d3eadfb7df7244, type: 3}
       propertyPath: m_LocalScale.z
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 1f65492923f8ec1468d3eadfb7df7244, type: 3}
-      propertyPath: m_Name
-      value: Car
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 1f65492923f8ec1468d3eadfb7df7244, type: 3}
       propertyPath: m_Materials.Array.data[1]
