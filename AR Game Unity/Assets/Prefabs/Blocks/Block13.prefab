@@ -58,7 +58,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a43d3def554ad38469d80957390abb01, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -393,11 +393,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3776917070171552899}
     m_Modifications:
-    - target: {fileID: 4407335261698672058, guid: ad59be248810f664199403bbdf439170,
-        type: 3}
-      propertyPath: m_Name
-      value: SkyScraper02
-      objectReference: {fileID: 0}
     - target: {fileID: 252145880357836754, guid: ad59be248810f664199403bbdf439170,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -467,6 +462,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 2.3323247
+      objectReference: {fileID: 0}
+    - target: {fileID: 4407335261698672058, guid: ad59be248810f664199403bbdf439170,
+        type: 3}
+      propertyPath: m_Name
+      value: SkyScraper02
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad59be248810f664199403bbdf439170, type: 3}
@@ -843,11 +843,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3776917070171552899}
     m_Modifications:
-    - target: {fileID: 6512992389867824920, guid: 54b3fd09f5f0345458a5b2d25a459278,
-        type: 3}
-      propertyPath: m_Name
-      value: SkyScraper03 (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 9221296416914048153, guid: 54b3fd09f5f0345458a5b2d25a459278,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -917,6 +912,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.21231043
+      objectReference: {fileID: 0}
+    - target: {fileID: 6512992389867824920, guid: 54b3fd09f5f0345458a5b2d25a459278,
+        type: 3}
+      propertyPath: m_Name
+      value: SkyScraper03 (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54b3fd09f5f0345458a5b2d25a459278, type: 3}
@@ -1023,11 +1023,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3776917070171552899}
     m_Modifications:
-    - target: {fileID: 5877789835612827435, guid: b3bdd9faa549a474ab698688a00140f9,
-        type: 3}
-      propertyPath: m_Name
-      value: Generator
-      objectReference: {fileID: 0}
     - target: {fileID: 6633080277232087912, guid: b3bdd9faa549a474ab698688a00140f9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1097,6 +1092,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5877789835612827435, guid: b3bdd9faa549a474ab698688a00140f9,
+        type: 3}
+      propertyPath: m_Name
+      value: Generator
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b3bdd9faa549a474ab698688a00140f9, type: 3}
@@ -1483,11 +1483,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3776917070171552899}
     m_Modifications:
-    - target: {fileID: 6512992389867824920, guid: 54b3fd09f5f0345458a5b2d25a459278,
-        type: 3}
-      propertyPath: m_Name
-      value: SkyScraper03
-      objectReference: {fileID: 0}
     - target: {fileID: 9221296416914048153, guid: 54b3fd09f5f0345458a5b2d25a459278,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1557,6 +1552,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.21231043
+      objectReference: {fileID: 0}
+    - target: {fileID: 6512992389867824920, guid: 54b3fd09f5f0345458a5b2d25a459278,
+        type: 3}
+      propertyPath: m_Name
+      value: SkyScraper03
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54b3fd09f5f0345458a5b2d25a459278, type: 3}
@@ -1958,11 +1958,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3776917070171552899}
     m_Modifications:
-    - target: {fileID: 3887871130239074935, guid: 4b86f19d877ed2042be59a72dc1cad55,
-        type: 3}
-      propertyPath: m_Name
-      value: PhoneBooth
-      objectReference: {fileID: 0}
     - target: {fileID: 3887871130239074934, guid: 4b86f19d877ed2042be59a72dc1cad55,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2032,6 +2027,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.62825274
+      objectReference: {fileID: 0}
+    - target: {fileID: 3887871130239074935, guid: 4b86f19d877ed2042be59a72dc1cad55,
+        type: 3}
+      propertyPath: m_Name
+      value: PhoneBooth
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b86f19d877ed2042be59a72dc1cad55, type: 3}
