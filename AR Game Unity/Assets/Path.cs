@@ -6,7 +6,7 @@ using UnityEngine;
 public class Path : MonoBehaviour
 {
     public List<Transform> pathPoints = new List<Transform>();
-
+    public bool loop = true;
     private void Start()
     {
         foreach(Transform child in transform)
@@ -26,6 +26,7 @@ public class Path : MonoBehaviour
             }
             else
             {
+                if (loop)
                 Gizmos.DrawLine(transform.GetChild(i).position, transform.GetChild(0).position);
             }
         }
