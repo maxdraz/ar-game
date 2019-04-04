@@ -21,9 +21,14 @@ public class FollowPoints : MonoBehaviour
     private void Update()
     {
         transform.Translate(Vector3.forward * speed * Time.deltaTime);
-        transform.LookAt(pointer, pointer.up);
+        //transform.LookAt(pointer, pointer.up);
 
-        if (Vector3.Distance(transform.position, pointer.position) < 0.1f)
+        Vector3 dir = pointer.position - transform.position;
+        Quaternion rot = Quaternion.LookRotation(dir);
+        // slerp to the desired rotation over time
+        transform.rotation = Quaternion.Slerp(transform.rotation, rot, speed * 2 * Time.deltaTime);
+
+        if (Vector3.Distance(transform.position, pointer.position) < 0.25f)
         {
             if (!loop && currentPoint == 0)
             {
@@ -40,7 +45,7 @@ public class FollowPoints : MonoBehaviour
             {
                 currentPoint = 0;
                 objectNonCar.SetActive(false);
-                speed = 0.1f;
+                speed = 0.5f;
             }
             pointer.position = path.pathPoints[currentPoint].position;
 

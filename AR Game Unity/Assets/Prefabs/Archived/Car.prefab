@@ -101,8 +101,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   path: {fileID: 0}
   currentPoint: 0
-  speed: 3.5
+  speed: 2
   pointer: {fileID: 5364677214233175537}
+  loop: 1
+  objectNonCar: {fileID: 0}
 --- !u!1 &5364677214233175536
 GameObject:
   m_ObjectHideFlags: 0
