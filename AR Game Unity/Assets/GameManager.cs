@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
+using UnityEngine.Android;
 
 public class GameManager : MonoBehaviour
 {
@@ -43,7 +44,7 @@ public class GameManager : MonoBehaviour
             if (Input.touchCount > 0)
             {
                 Destroy(intro, 0.05f);
-                currentGameState = gameState.game;
+               // currentGameState = gameState.game;
             }
         }
         else if (currentGameState == gameState.end)
@@ -72,6 +73,7 @@ public class GameManager : MonoBehaviour
 
         if (ObjectsToChange <= 0)
         {
+            ObjectsToChange = 0;
             outro.SetActive(true);
             currentGameState = gameState.end;
         }
