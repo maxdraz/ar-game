@@ -102,6 +102,7 @@ MonoBehaviour:
   path: {fileID: 0}
   currentPoint: 0
   speed: 2
+  turnSpeed: 2
   pointer: {fileID: 5364677214233175537}
   loop: 1
   objectNonCar: {fileID: 0}

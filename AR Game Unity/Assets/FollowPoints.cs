@@ -7,6 +7,7 @@ public class FollowPoints : MonoBehaviour
     [SerializeField] private Path path;
     public int currentPoint;
     [SerializeField] private float speed;
+    [SerializeField] private float turnSpeed;
     public Transform pointer;
 
     public bool loop = true;
@@ -26,7 +27,7 @@ public class FollowPoints : MonoBehaviour
         Vector3 dir = pointer.position - transform.position;
         Quaternion rot = Quaternion.LookRotation(dir);
         // slerp to the desired rotation over time
-        transform.rotation = Quaternion.Slerp(transform.rotation, rot, speed * 2 * Time.deltaTime);
+        transform.rotation = Quaternion.Slerp(transform.rotation, rot, turnSpeed * 2 * Time.deltaTime);
 
         if (Vector3.Distance(transform.position, pointer.position) < 0.25f)
         {
