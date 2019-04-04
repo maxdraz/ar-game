@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(AudioSource))]
 public class GreenUp : MonoBehaviour
@@ -32,9 +33,7 @@ public class GreenUp : MonoBehaviour
             turnInto.SetActive(true);
         }
         //instantiate points over object
-        Vector3 spawnPos = new Vector3(transform.position.x, 0.01f, transform.position.z);
-        GameObject pointsGO = (GameObject)Instantiate(pointsTextPrefab, spawnPos, Quaternion.identity);
-        pointsGO.GetComponentInChildren<TextMesh>().text = "+ " + points;
+        TextSpawner.instance.SpawnText(points);
 
         gameObject.SetActive(false);
     }

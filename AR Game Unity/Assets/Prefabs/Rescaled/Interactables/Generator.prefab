@@ -156,7 +156,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnInto: {fileID: 541349186113995753}
   points: 3
-  pointsTextPrefab: {fileID: 4217297443490177353, guid: 1353f794000db9a4095793d38ba62bd7,
+  pointsTextPrefab: {fileID: 8567878281007846457, guid: 4621a3fbf972a964d8cf2e518a2d02de,
     type: 3}
   sounds:
   - {fileID: 8300000, guid: ecef9fa2f405f794bb40cc0528dba5a7, type: 3}
@@ -168,11 +168,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6633080277232087912}
     m_Modifications:
-    - target: {fileID: 1137335883900201680, guid: b23ee8c6ae3b50a4cbac3972d8c8c499,
-        type: 3}
-      propertyPath: m_Name
-      value: Generator (Done)
-      objectReference: {fileID: 0}
     - target: {fileID: 1137335883900040944, guid: b23ee8c6ae3b50a4cbac3972d8c8c499,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -243,6 +238,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 1137335883900201680, guid: b23ee8c6ae3b50a4cbac3972d8c8c499,
+        type: 3}
+      propertyPath: m_Name
+      value: Generator (Done)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b23ee8c6ae3b50a4cbac3972d8c8c499, type: 3}
 --- !u!1 &6064040358629029033 stripped
@@ -264,16 +264,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6633080277232087912}
     m_Modifications:
-    - target: {fileID: 7265070825541949266, guid: 3663064af9ce7234895bef26471d2e33,
-        type: 3}
-      propertyPath: m_Name
-      value: Solar Panel Variant
-      objectReference: {fileID: 0}
-    - target: {fileID: 7265070825541949266, guid: 3663064af9ce7234895bef26471d2e33,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7265070825542044530, guid: 3663064af9ce7234895bef26471d2e33,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -343,6 +333,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.010719352
+      objectReference: {fileID: 0}
+    - target: {fileID: 7265070825541949266, guid: 3663064af9ce7234895bef26471d2e33,
+        type: 3}
+      propertyPath: m_Name
+      value: Solar Panel Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 7265070825541949266, guid: 3663064af9ce7234895bef26471d2e33,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3663064af9ce7234895bef26471d2e33, type: 3}

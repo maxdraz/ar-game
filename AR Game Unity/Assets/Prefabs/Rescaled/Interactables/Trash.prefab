@@ -111,7 +111,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnInto: {fileID: 0}
   points: 1
-  pointsTextPrefab: {fileID: 4217297443490177353, guid: 1353f794000db9a4095793d38ba62bd7,
+  pointsTextPrefab: {fileID: 8567878281007846457, guid: 4621a3fbf972a964d8cf2e518a2d02de,
     type: 3}
   sounds:
   - {fileID: 8300000, guid: d8a3dab29ecbdd64f90137f3f16f5fb8, type: 3}
@@ -154,11 +154,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1044047376644811500}
     m_Modifications:
-    - target: {fileID: 2865083368484910762, guid: e3e946929221f154e8996fe0daca455c,
-        type: 3}
-      propertyPath: m_Name
-      value: Rubbish Bag Variant
-      objectReference: {fileID: 0}
     - target: {fileID: 2865083368484874890, guid: e3e946929221f154e8996fe0daca455c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -228,6 +223,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.020000007
+      objectReference: {fileID: 0}
+    - target: {fileID: 2865083368484910762, guid: e3e946929221f154e8996fe0daca455c,
+        type: 3}
+      propertyPath: m_Name
+      value: Rubbish Bag Variant
       objectReference: {fileID: 0}
     - target: {fileID: 6337148792683172692, guid: e3e946929221f154e8996fe0daca455c,
         type: 3}
