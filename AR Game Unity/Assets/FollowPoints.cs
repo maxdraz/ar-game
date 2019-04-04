@@ -22,12 +22,13 @@ public class FollowPoints : MonoBehaviour
     private void Update()
     {
         transform.Translate(Vector3.forward * speed * Time.deltaTime);
-        //transform.LookAt(pointer, pointer.up);
+        
 
         Vector3 dir = pointer.position - transform.position;
-        Quaternion rot = Quaternion.LookRotation(dir);
+        Quaternion rot = Quaternion.LookRotation(dir, pointer.up);
         // slerp to the desired rotation over time
         transform.rotation = Quaternion.Slerp(transform.rotation, rot, turnSpeed * 2 * Time.deltaTime);
+        
 
         if (Vector3.Distance(transform.position, pointer.position) < 0.25f)
         {
