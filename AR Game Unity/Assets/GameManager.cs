@@ -27,7 +27,7 @@ public class GameManager : MonoBehaviour
 
     }
 
-    private int ObjectsToChange;
+    [SerializeField] private int ObjectsToChange;
     private int maxObjects;
     [SerializeField] private TextMeshProUGUI objectsLeft;
     [SerializeField] private GameObject intro;
@@ -39,21 +39,15 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        if (currentGameState == gameState.start)
+        if (ObjectsToChange <= 0)
         {
-            if (Input.touchCount > 0)
-            {
-                Destroy(intro, 0.05f);
-               // currentGameState = gameState.game;
-            }
+            MenuManager.instance.ToggleMenu(1);
+            MenuManager.instance.ToggleMenu(3);
+            
+            
         }
-        else if (currentGameState == gameState.end)
-        {
-            if (Input.touchCount > 0)
-            {
-                SceneManager.LoadScene(0);
-            }
-        }
+           
+        
     }
     
     
@@ -79,5 +73,9 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void LoadScene(int index)
+    {
+        SceneManager.LoadScene(index);
+    }
    
 }
