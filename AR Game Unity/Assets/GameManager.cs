@@ -34,19 +34,28 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject outro;
     private enum gameState { start, game, end };
     gameState currentGameState = gameState.start;
+    bool end;
+    bool end2;
 
 
 
     private void Update()
     {
-        if (ObjectsToChange <= 0)
+        if (ObjectsToChange <= 0 && end == false && end2 == false)
         {
-            MenuManager.instance.ToggleMenu(1);
-            MenuManager.instance.ToggleMenu(3);
+            end = true;
+           
             
             
         }
-           
+
+        if (end)
+        {
+            MenuManager.instance.ToggleMenu(1);
+            MenuManager.instance.ToggleMenu(3);
+            end = false;
+            end2 = true;
+        }
         
     }
     
