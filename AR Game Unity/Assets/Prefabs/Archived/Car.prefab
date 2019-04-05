@@ -101,7 +101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   path: {fileID: 0}
   currentPoint: 0
-  speed: 2
+  speed: 1
   turnSpeed: 2
   pointer: {fileID: 5364677214233175537}
   loop: 1
@@ -162,6 +162,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5364677213885611208}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1f65492923f8ec1468d3eadfb7df7244, type: 3}
+      propertyPath: m_Name
+      value: Car
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1f65492923f8ec1468d3eadfb7df7244, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -217,10 +221,6 @@ PrefabInstance:
     - target: {fileID: 400000, guid: 1f65492923f8ec1468d3eadfb7df7244, type: 3}
       propertyPath: m_LocalScale.z
       value: 5.9994183
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 1f65492923f8ec1468d3eadfb7df7244, type: 3}
-      propertyPath: m_Name
-      value: Car
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 1f65492923f8ec1468d3eadfb7df7244, type: 3}
       propertyPath: m_Materials.Array.data[0]

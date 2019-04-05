@@ -13,9 +13,22 @@ public class MenuManager : MonoBehaviour
     }
 
     [SerializeField] private List<Menu> menus;
-   
+    public static MenuManager instance;
 
-  public void PauseUnpauseGame()
+    private void Awake()
+    {
+        if (instance != null)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            instance = this;
+        }
+    }
+
+
+    public void PauseUnpauseGame()
     {
         if (Time.timeScale > 0)
         {
