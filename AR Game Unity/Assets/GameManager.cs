@@ -14,13 +14,13 @@ public class GameManager : MonoBehaviour
     {
         //Check if instance already exists
         if (the == null)
-        { 
+        {
             //if not, set instance to this
             the = this;
         }
         //If instance already exists and it's not this:
         else if (the != this)
-        { 
+        {
             //Then destroy this. This enforces our singleton pattern, meaning there can only ever be one instance of a GameManager.
             Destroy(gameObject);
         }
@@ -41,12 +41,13 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
+
         if (ObjectsToChange <= 0 && end == false && end2 == false)
         {
             end = true;
-           
-            
-            
+
+
+
         }
 
         if (end)
@@ -55,36 +56,46 @@ public class GameManager : MonoBehaviour
             MenuManager.instance.ToggleMenu(3);
             end = false;
             end2 = true;
+
+            if (ObjectsToChange <= 0)
+            {
+                MenuManager.instance.ToggleMenu(1);
+                MenuManager.instance.ToggleMenu(3);
+
+
+
+            }
+
         }
-        
-    }
-    
-    
-
-    public void AddToObjectToChange(int points)
-    {
-        ObjectsToChange+=points;
-        maxObjects = ObjectsToChange;
-        objectsLeft.text = ObjectsToChange.ToString() + "/" + maxObjects.ToString();
-        
     }
 
-    public void SubtractToObjectToChange(int points)
-    {
-        ObjectsToChange-= points;
-        objectsLeft.text = ObjectsToChange.ToString() + "/" + maxObjects.ToString();
 
-        if (ObjectsToChange <= 0)
+
+        public void AddToObjectToChange(int points)
         {
-            ObjectsToChange = 0;
-            outro.SetActive(true);
-            currentGameState = gameState.end;
+            ObjectsToChange += points;
+            maxObjects = ObjectsToChange;
+            objectsLeft.text = ObjectsToChange.ToString() + "/" + maxObjects.ToString();
+
         }
+
+        public void SubtractToObjectToChange(int points)
+        {
+            ObjectsToChange -= points;
+            objectsLeft.text = ObjectsToChange.ToString() + "/" + maxObjects.ToString();
+
+            if (ObjectsToChange <= 0)
+            {
+                ObjectsToChange = 0;
+                outro.SetActive(true);
+                currentGameState = gameState.end;
+            }
+        }
+
+        public void LoadScene(int index)
+        {
+            SceneManager.LoadScene(index);
+        }
+
     }
 
-    public void LoadScene(int index)
-    {
-        SceneManager.LoadScene(index);
-    }
-   
-}
