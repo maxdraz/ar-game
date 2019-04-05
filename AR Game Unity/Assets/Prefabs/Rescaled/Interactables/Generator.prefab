@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6633080277232087912}
+  - component: {fileID: 9033565702697954813}
   m_Layer: 0
   m_Name: Generator
   m_TagString: Untagged
@@ -32,13 +33,13 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &294024130197550639
+--- !u!82 &9033565702697954813
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6064040358629029033}
+  m_GameObject: {fileID: 5877789835612827435}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 243979661422283984, guid: 6aab3a8676d18af4b81470220715fc76,
@@ -155,6 +156,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turnInto: {fileID: 541349186113995753}
+  particleSystem: {fileID: 6539303111956024818, guid: 75108a0590ee310489d3483d4668d8c0,
+    type: 3}
   points: 3
   pointsTextPrefab: {fileID: 8567878281007846457, guid: 4621a3fbf972a964d8cf2e518a2d02de,
     type: 3}
@@ -168,6 +171,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6633080277232087912}
     m_Modifications:
+    - target: {fileID: 1137335883900201680, guid: b23ee8c6ae3b50a4cbac3972d8c8c499,
+        type: 3}
+      propertyPath: m_Name
+      value: Generator (Done)
+      objectReference: {fileID: 0}
     - target: {fileID: 1137335883900040944, guid: b23ee8c6ae3b50a4cbac3972d8c8c499,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -238,11 +246,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.1
       objectReference: {fileID: 0}
-    - target: {fileID: 1137335883900201680, guid: b23ee8c6ae3b50a4cbac3972d8c8c499,
-        type: 3}
-      propertyPath: m_Name
-      value: Generator (Done)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b23ee8c6ae3b50a4cbac3972d8c8c499, type: 3}
 --- !u!1 &6064040358629029033 stripped
@@ -264,6 +267,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6633080277232087912}
     m_Modifications:
+    - target: {fileID: 7265070825541949266, guid: 3663064af9ce7234895bef26471d2e33,
+        type: 3}
+      propertyPath: m_Name
+      value: Solar Panel Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 7265070825541949266, guid: 3663064af9ce7234895bef26471d2e33,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7265070825542044530, guid: 3663064af9ce7234895bef26471d2e33,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -333,16 +346,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.010719352
-      objectReference: {fileID: 0}
-    - target: {fileID: 7265070825541949266, guid: 3663064af9ce7234895bef26471d2e33,
-        type: 3}
-      propertyPath: m_Name
-      value: Solar Panel Variant
-      objectReference: {fileID: 0}
-    - target: {fileID: 7265070825541949266, guid: 3663064af9ce7234895bef26471d2e33,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3663064af9ce7234895bef26471d2e33, type: 3}

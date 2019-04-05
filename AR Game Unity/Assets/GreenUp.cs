@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-[RequireComponent(typeof(AudioSource))]
+
 public class GreenUp : MonoBehaviour
 {
     public GameObject turnInto;
+    public GameObject particleSystem;
     public int points;
     public GameObject pointsTextPrefab;
     public List<AudioClip> sounds;
@@ -14,7 +15,7 @@ public class GreenUp : MonoBehaviour
 
     private void Start()
     {
-        audio = GetComponent<AudioSource>();
+        audio = GetComponentInParent<AudioSource>();
         audio.clip = sounds[0];
         audio.loop = true;
         audio.Play();
@@ -34,7 +35,8 @@ public class GreenUp : MonoBehaviour
         }
         //instantiate points over object
         TextSpawner.instance.SpawnText(points);
-
+        //instantiate ps
+        GameObject ps = (GameObject)Instantiate(particleSystem, transform.parent.transform.position, transform.parent.transform.rotation);
         gameObject.SetActive(false);
     }
 }

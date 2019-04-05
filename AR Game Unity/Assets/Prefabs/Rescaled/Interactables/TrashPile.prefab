@@ -194,7 +194,6 @@ GameObject:
   - component: {fileID: 4092899200254532117}
   - component: {fileID: 4241302327813449267}
   - component: {fileID: 2057254062163002576}
-  - component: {fileID: 5462512342160236549}
   m_Layer: 0
   m_Name: Trash Box
   m_TagString: Untagged
@@ -238,6 +237,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turnInto: {fileID: 3043779890998095134}
+  particleSystem: {fileID: 6539303111956024818, guid: 75108a0590ee310489d3483d4668d8c0,
+    type: 3}
   points: 6
   pointsTextPrefab: {fileID: 8567878281007846457, guid: 4621a3fbf972a964d8cf2e518a2d02de,
     type: 3}
@@ -257,22 +258,97 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.07, y: 0.37, z: 0.55}
   m_Center: {x: 0.16, y: 0.05, z: 0.03}
---- !u!82 &5462512342160236549
+--- !u!1 &6676282894459323535
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6088592538258887212}
+  m_Layer: 0
+  m_Name: Cabbages
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6088592538258887212
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6676282894459323535}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.43681717, y: 1.8724138, z: -0.23703933}
+  m_LocalScale: {x: 2.5, y: 20, z: 5}
+  m_Children:
+  - {fileID: 5223630709501255106}
+  - {fileID: 3881678777577732198}
+  - {fileID: 392420735244008751}
+  - {fileID: 1791163882366801184}
+  - {fileID: 747353875505261080}
+  - {fileID: 2084751499255779395}
+  - {fileID: 2135816014868056709}
+  - {fileID: 2269477227277585597}
+  - {fileID: 1663258633585524661}
+  - {fileID: 5875690554463245343}
+  - {fileID: 859535165037224104}
+  - {fileID: 4333379321147653797}
+  m_Father: {fileID: 4444404002333676898}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7854043615992060867
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4875351100456820194}
+  - component: {fileID: 4698617053009960684}
+  m_Layer: 0
+  m_Name: TrashPile
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4875351100456820194
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7854043615992060867}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.34361348, y: 0.4466602, z: 0.3947496}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4092899200254532117}
+  - {fileID: 4444404002333676898}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &4698617053009960684
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6321710233868427073}
+  m_GameObject: {fileID: 7854043615992060867}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 243979661422283984, guid: 6aab3a8676d18af4b81470220715fc76,
     type: 2}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: d8a3dab29ecbdd64f90137f3f16f5fb8, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -354,80 +430,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!1 &6676282894459323535
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6088592538258887212}
-  m_Layer: 0
-  m_Name: Cabbages
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &6088592538258887212
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6676282894459323535}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.43681717, y: 1.8724138, z: -0.23703933}
-  m_LocalScale: {x: 2.5, y: 20, z: 5}
-  m_Children:
-  - {fileID: 5223630709501255106}
-  - {fileID: 3881678777577732198}
-  - {fileID: 392420735244008751}
-  - {fileID: 1791163882366801184}
-  - {fileID: 747353875505261080}
-  - {fileID: 2084751499255779395}
-  - {fileID: 2135816014868056709}
-  - {fileID: 2269477227277585597}
-  - {fileID: 1663258633585524661}
-  - {fileID: 5875690554463245343}
-  - {fileID: 859535165037224104}
-  - {fileID: 4333379321147653797}
-  m_Father: {fileID: 4444404002333676898}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &7854043615992060867
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4875351100456820194}
-  m_Layer: 0
-  m_Name: TrashPile
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4875351100456820194
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7854043615992060867}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.34361348, y: 0.4466602, z: 0.3947496}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 4092899200254532117}
-  - {fileID: 4444404002333676898}
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &392420735243610031
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1067,6 +1069,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4092899200254532117}
     m_Modifications:
+    - target: {fileID: 2865083368484910762, guid: e3e946929221f154e8996fe0daca455c,
+        type: 3}
+      propertyPath: m_Name
+      value: Rubbish Bag Variant (5)
+      objectReference: {fileID: 0}
     - target: {fileID: 2865083368484874890, guid: e3e946929221f154e8996fe0daca455c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1137,11 +1144,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.02000001
       objectReference: {fileID: 0}
-    - target: {fileID: 2865083368484910762, guid: e3e946929221f154e8996fe0daca455c,
-        type: 3}
-      propertyPath: m_Name
-      value: Rubbish Bag Variant (5)
-      objectReference: {fileID: 0}
     - target: {fileID: 6337148792683172692, guid: e3e946929221f154e8996fe0daca455c,
         type: 3}
       propertyPath: m_Enabled
@@ -1162,6 +1164,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4092899200254532117}
     m_Modifications:
+    - target: {fileID: 2865083368484910762, guid: e3e946929221f154e8996fe0daca455c,
+        type: 3}
+      propertyPath: m_Name
+      value: Rubbish Bag Variant (4)
+      objectReference: {fileID: 0}
     - target: {fileID: 2865083368484874890, guid: e3e946929221f154e8996fe0daca455c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1232,11 +1239,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.02000003
       objectReference: {fileID: 0}
-    - target: {fileID: 2865083368484910762, guid: e3e946929221f154e8996fe0daca455c,
-        type: 3}
-      propertyPath: m_Name
-      value: Rubbish Bag Variant (4)
-      objectReference: {fileID: 0}
     - target: {fileID: 6337148792683172692, guid: e3e946929221f154e8996fe0daca455c,
         type: 3}
       propertyPath: m_Enabled
@@ -1257,6 +1259,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4092899200254532117}
     m_Modifications:
+    - target: {fileID: 2865083368484910762, guid: e3e946929221f154e8996fe0daca455c,
+        type: 3}
+      propertyPath: m_Name
+      value: Rubbish Bag Variant (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 2865083368484874890, guid: e3e946929221f154e8996fe0daca455c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1327,11 +1334,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.020000014
       objectReference: {fileID: 0}
-    - target: {fileID: 2865083368484910762, guid: e3e946929221f154e8996fe0daca455c,
-        type: 3}
-      propertyPath: m_Name
-      value: Rubbish Bag Variant (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 6337148792683172692, guid: e3e946929221f154e8996fe0daca455c,
         type: 3}
       propertyPath: m_Enabled
@@ -1352,6 +1354,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4092899200254532117}
     m_Modifications:
+    - target: {fileID: 2865083368484910762, guid: e3e946929221f154e8996fe0daca455c,
+        type: 3}
+      propertyPath: m_Name
+      value: Rubbish Bag Variant (7)
+      objectReference: {fileID: 0}
     - target: {fileID: 2865083368484874890, guid: e3e946929221f154e8996fe0daca455c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1421,11 +1428,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.020000014
-      objectReference: {fileID: 0}
-    - target: {fileID: 2865083368484910762, guid: e3e946929221f154e8996fe0daca455c,
-        type: 3}
-      propertyPath: m_Name
-      value: Rubbish Bag Variant (7)
       objectReference: {fileID: 0}
     - target: {fileID: 6337148792683172692, guid: e3e946929221f154e8996fe0daca455c,
         type: 3}
@@ -1763,6 +1765,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4092899200254532117}
     m_Modifications:
+    - target: {fileID: 2865083368484910762, guid: e3e946929221f154e8996fe0daca455c,
+        type: 3}
+      propertyPath: m_Name
+      value: Rubbish Bag Variant (8)
+      objectReference: {fileID: 0}
     - target: {fileID: 2865083368484874890, guid: e3e946929221f154e8996fe0daca455c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1833,11 +1840,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.020000014
       objectReference: {fileID: 0}
-    - target: {fileID: 2865083368484910762, guid: e3e946929221f154e8996fe0daca455c,
-        type: 3}
-      propertyPath: m_Name
-      value: Rubbish Bag Variant (8)
-      objectReference: {fileID: 0}
     - target: {fileID: 6337148792683172692, guid: e3e946929221f154e8996fe0daca455c,
         type: 3}
       propertyPath: m_Enabled
@@ -1858,6 +1860,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4092899200254532117}
     m_Modifications:
+    - target: {fileID: 2865083368484910762, guid: e3e946929221f154e8996fe0daca455c,
+        type: 3}
+      propertyPath: m_Name
+      value: Rubbish Bag Variant (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 2865083368484874890, guid: e3e946929221f154e8996fe0daca455c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1928,11 +1935,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.020000014
       objectReference: {fileID: 0}
-    - target: {fileID: 2865083368484910762, guid: e3e946929221f154e8996fe0daca455c,
-        type: 3}
-      propertyPath: m_Name
-      value: Rubbish Bag Variant (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 6337148792683172692, guid: e3e946929221f154e8996fe0daca455c,
         type: 3}
       propertyPath: m_Enabled
@@ -1953,6 +1955,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4092899200254532117}
     m_Modifications:
+    - target: {fileID: 2865083368484910762, guid: e3e946929221f154e8996fe0daca455c,
+        type: 3}
+      propertyPath: m_Name
+      value: Rubbish Bag Variant (6)
+      objectReference: {fileID: 0}
     - target: {fileID: 2865083368484874890, guid: e3e946929221f154e8996fe0daca455c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2023,11 +2030,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.020000014
       objectReference: {fileID: 0}
-    - target: {fileID: 2865083368484910762, guid: e3e946929221f154e8996fe0daca455c,
-        type: 3}
-      propertyPath: m_Name
-      value: Rubbish Bag Variant (6)
-      objectReference: {fileID: 0}
     - target: {fileID: 6337148792683172692, guid: e3e946929221f154e8996fe0daca455c,
         type: 3}
       propertyPath: m_Enabled
@@ -2048,6 +2050,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4092899200254532117}
     m_Modifications:
+    - target: {fileID: 2865083368484910762, guid: e3e946929221f154e8996fe0daca455c,
+        type: 3}
+      propertyPath: m_Name
+      value: Rubbish Bag Variant (3)
+      objectReference: {fileID: 0}
     - target: {fileID: 2865083368484874890, guid: e3e946929221f154e8996fe0daca455c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2117,11 +2124,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.02000003
-      objectReference: {fileID: 0}
-    - target: {fileID: 2865083368484910762, guid: e3e946929221f154e8996fe0daca455c,
-        type: 3}
-      propertyPath: m_Name
-      value: Rubbish Bag Variant (3)
       objectReference: {fileID: 0}
     - target: {fileID: 6337148792683172692, guid: e3e946929221f154e8996fe0daca455c,
         type: 3}
