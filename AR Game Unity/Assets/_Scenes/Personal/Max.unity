@@ -112,13 +112,13 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!43 &59762308
+--- !u!43 &57977414
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: ImageTargetMesh-35614
+  m_Name: ImageTargetMesh-1068
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -457,7 +457,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 6055920769769792617}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 6055920769769792622}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -113659843, guid: f70555f144d8491a825f0804e09c671c, type: 3}
@@ -529,7 +529,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!21 &2128677213
+--- !u!21 &1629834898
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
@@ -538,7 +538,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: 'Destiny2Material
 
-    -35624'
+    -1078'
   m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
@@ -628,12 +628,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2128677213}
+      objectReference: {fileID: 1629834898}
     - target: {fileID: 301159083912881912, guid: 290776e01f2f9be4b85482b2d0a5348c,
         type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 59762308}
+      objectReference: {fileID: 57977414}
     - target: {fileID: 1630982924566073074, guid: 290776e01f2f9be4b85482b2d0a5348c,
         type: 3}
       propertyPath: slider
@@ -903,7 +903,7 @@ PrefabInstance:
     - target: {fileID: 9128623803436157414, guid: 073637cacbcfd904091c6afbbea36061,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9128623803436157414, guid: 073637cacbcfd904091c6afbbea36061,
         type: 3}
@@ -924,6 +924,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 9128623803436157414, guid: 073637cacbcfd904091c6afbbea36061,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3797197916209798467, guid: 073637cacbcfd904091c6afbbea36061,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 073637cacbcfd904091c6afbbea36061, type: 3}
@@ -948,6 +958,18 @@ GameObject:
 --- !u!1 &6055920769769792620 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4280243013512485550, guid: 073637cacbcfd904091c6afbbea36061,
+    type: 3}
+  m_PrefabInstance: {fileID: 6055920769769792617}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6055920769769792621 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3731969505754212922, guid: 073637cacbcfd904091c6afbbea36061,
+    type: 3}
+  m_PrefabInstance: {fileID: 6055920769769792617}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6055920769769792622 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6055920769398241168, guid: 073637cacbcfd904091c6afbbea36061,
     type: 3}
   m_PrefabInstance: {fileID: 6055920769769792617}
   m_PrefabAsset: {fileID: 0}
@@ -1031,7 +1053,7 @@ PrefabInstance:
     - target: {fileID: 7705978023122799435, guid: 0d7c13ecf39d1c341ac05323b98f10b9,
         type: 3}
       propertyPath: menus.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7705978023122799435, guid: 0d7c13ecf39d1c341ac05323b98f10b9,
         type: 3}
@@ -1041,6 +1063,11 @@ PrefabInstance:
     - target: {fileID: 7705978023122799435, guid: 0d7c13ecf39d1c341ac05323b98f10b9,
         type: 3}
       propertyPath: menus.Array.data[1].ObjectsToToggle.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7705978023122799435, guid: 0d7c13ecf39d1c341ac05323b98f10b9,
+        type: 3}
+      propertyPath: menus.Array.data[2].ObjectsToToggle.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7705978023122799435, guid: 0d7c13ecf39d1c341ac05323b98f10b9,
@@ -1078,6 +1105,21 @@ PrefabInstance:
       propertyPath: menus.Array.data[0].toggledOn
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7705978023122799435, guid: 0d7c13ecf39d1c341ac05323b98f10b9,
+        type: 3}
+      propertyPath: menus.Array.data[2].name
+      value: ZoomSlider
+      objectReference: {fileID: 0}
+    - target: {fileID: 7705978023122799435, guid: 0d7c13ecf39d1c341ac05323b98f10b9,
+        type: 3}
+      propertyPath: menus.Array.data[2].ObjectsToToggle.Array.data[0]
+      value: 
+      objectReference: {fileID: 6055920769769792622}
+    - target: {fileID: 7705978023122799435, guid: 0d7c13ecf39d1c341ac05323b98f10b9,
+        type: 3}
+      propertyPath: menus.Array.data[2].ObjectsToToggle.Array.data[1]
+      value: 
+      objectReference: {fileID: 6055920769769792621}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d7c13ecf39d1c341ac05323b98f10b9, type: 3}
 --- !u!114 &8537310584136102860 stripped

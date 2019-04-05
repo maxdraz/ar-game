@@ -22,6 +22,7 @@ AudioMixerController:
     - a52791fa5f4a7584c828e5d9bd40918f
     - 01373e3062136f340bca6bafa25b889e
     - 9a0072cb8be1a874987e84896fed553d
+    - e7970e7c52e3e3841a0f92df725bf696
     name: View
   m_CurrentViewIndex: 0
   m_TargetSnapshot: {fileID: 24500006}
@@ -38,6 +39,7 @@ AudioMixerGroupController:
   - {fileID: 243714495580426120}
   - {fileID: 243979661422283984}
   - {fileID: 243051735469803244}
+  - {fileID: 243090610643016730}
   m_Volume: 036b690dd5767aa4cb0bf3777a0b74ce
   m_Pitch: 72bc94903fc83ee46befee3fc997da6e
   m_Effects:
@@ -91,6 +93,24 @@ AudioMixerGroupController:
   m_Mute: 0
   m_Solo: 0
   m_BypassEffects: 0
+--- !u!243 &243090610643016730
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Cars
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: e7970e7c52e3e3841a0f92df725bf696
+  m_Children: []
+  m_Volume: 1ef1d8e491bf4b34dbd4b72cef8521c4
+  m_Pitch: 3cff5ae3690978e47b3b140bf406ce55
+  m_Effects:
+  - {fileID: 244029587142529882}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
 --- !u!243 &243714495580426120
 AudioMixerGroupController:
   m_ObjectHideFlags: 0
@@ -127,6 +147,20 @@ AudioMixerGroupController:
   m_Mute: 0
   m_Solo: 0
   m_BypassEffects: 0
+--- !u!244 &244029587142529882
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: 65032815fbc0f0844a03f3b78ca0a01a
+  m_EffectName: Attenuation
+  m_MixLevel: f54e5f9104feb6844a23c354dad797b7
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
 --- !u!244 &244671017587901406
 AudioMixerEffectController:
   m_ObjectHideFlags: 3
