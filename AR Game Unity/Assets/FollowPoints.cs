@@ -30,7 +30,7 @@ public class FollowPoints : MonoBehaviour
         transform.rotation = Quaternion.Slerp(transform.rotation, rot, turnSpeed * 2 * Time.deltaTime);
         
 
-        if (Vector3.Distance(transform.position, pointer.position) < 0.25f)
+        if (Vector3.Distance(transform.position, pointer.position) < 0.3f)
         {
             if (!loop && currentPoint == 0)
             {
