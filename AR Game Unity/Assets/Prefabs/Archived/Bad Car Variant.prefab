@@ -234,9 +234,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turnInto: {fileID: 2906941422070263409}
-  particleSystem: {fileID: 0}
+  particleSystem: {fileID: 6539303111956024818, guid: 75108a0590ee310489d3483d4668d8c0,
+    type: 3}
   points: 1
-  pointsTextPrefab: {fileID: 0}
+  pointsTextPrefab: {fileID: 8567878281007846457, guid: 4621a3fbf972a964d8cf2e518a2d02de,
+    type: 3}
   sounds: []
 --- !u!1 &2334610889118216102
 GameObject:

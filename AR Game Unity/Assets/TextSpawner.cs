@@ -23,7 +23,7 @@ public class TextSpawner : MonoBehaviour
     public void SpawnText(int points)
     {        
             GameObject pointsGO = (GameObject)Instantiate(pointsTextPrefab, transform.position, transform.rotation);
-            pointsGO.transform.parent = transform;
+        pointsGO.transform.SetParent(transform);
         pointsGO.GetComponentInChildren<Text>().text = "- " + points;           
         
     }
