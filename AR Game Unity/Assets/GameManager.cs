@@ -34,8 +34,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject outro;
     private enum gameState { start, game, end };
     gameState currentGameState = gameState.start;
-    bool end;
-    bool end2;
+    public bool end;
+    public bool end2;
 
 
 
@@ -57,14 +57,7 @@ public class GameManager : MonoBehaviour
             end = false;
             end2 = true;
 
-            if (ObjectsToChange <= 0)
-            {
-                MenuManager.instance.ToggleMenu(1);
-                MenuManager.instance.ToggleMenu(3);
-
-
-
-            }
+           
 
         }
     }
